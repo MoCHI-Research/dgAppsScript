@@ -1,0 +1,49 @@
+{
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Drive",
+        "serviceId": "drive",
+        "version": "v2"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "43"
+      }
+    ]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": [
+    "openid",
+    "https://www.googleapis.com/auth/script.storage",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/sqlservice",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/script.scriptapp"
+  ],
+  "urlFetchWhitelist": [
+    "https://raw.githubusercontent.com/nazaret0/nazaret0/main/drivegroups-logo-cropped.png",
+    "https://www.googleapis.com/batch/drive/v3"
+  ],
+  "runtimeVersion": "V8",
+  "addOns": {
+    "common": {
+      "name": "DriveGroups",
+      "logoUrl": "https://raw.githubusercontent.com/nazaret0/nazaret0/main/drivegroups-logo-cropped.png",
+      "layoutProperties": {
+        "primaryColor": "F06543",
+        "secondaryColor": "F09D51"
+      }
+    },
+    "drive": {
+      "homepageTrigger": {
+        "runFunction": "homepageTrigger",
+        "enabled": true
+      }
+    }
+  }
+}
